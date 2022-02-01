@@ -1,0 +1,16 @@
+"""
+Created on Tues Jan 31 15:15:04 2020
+@author: anuradha
+"""
+
+#highest even
+
+def highest_even(num_list):
+  highest_even = num_list[0]
+  for item in num_list:
+    if(item % 2 == 0 and item > highest_even):
+      highest_even = item
+    
+  return (highest_even)
+
+print(highest_even([10,11,23,24,1,2,3,43,42]))
