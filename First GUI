@@ -1,0 +1,38 @@
+"""
+Created on Wed Jan 31 15:15:04 2020
+@author: anuradha
+"""
+
+# GUI
+
+picture = [
+  [0,0,0,1,0,0,0], 
+  [0,0,1,1,1,0,0], 
+  [0,1,1,1,1,1,0], 
+  [1,1,1,1,1,1,1], 
+  [0,0,0,1,0,0,0], 
+  [0,0,0,1,0,0,0]
+]
+
+#Solution1:
+for rows in picture:
+  for pixel in rows:
+    if(pixel == 0):
+      print(' ',end='')
+    elif(pixel ==1):
+      print('*',end='')
+  # rows.join()
+  print('')
+
+
+#Solution2:
+for rows in picture:
+  # print(rows)
+  for i,item in enumerate(rows):
+    if(item == 0):
+      rows[i]= ' '
+    elif(item ==1):
+      rows[i] = '*'
+  print(''.join(rows))
+
+
