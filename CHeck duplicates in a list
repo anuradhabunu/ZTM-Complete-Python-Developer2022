@@ -1,0 +1,14 @@
+"""
+Created on Tue Jan 31 15:15:04 2020
+@author: anuradha
+"""
+# check for duplicates
+# you can use set to get rid of the duplicates but doing this exercise using loops and conditions
+some_list = ['a','b','c','b','d','m','n','n']
+solution = []
+for item in some_list:
+  if(some_list.count(item) > 1):
+    if(item not in solution):
+      solution.append(item)
+print(solution)    
+
